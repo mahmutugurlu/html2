@@ -1,0 +1,30 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav.menu{
+
+    text-align: center;
+    background-color: gainsboro;
+    width: 150px;
+}
+
+.active{
+
+    background-color: black;
+
+    /* color: white; calismadi, ic ice tagde bazen islemiyor*/
+
+}
+
+a.link{
+
+    color: white;
+}
+
+a{
+
+    text-decoration: none;
+    color: black;
+
+}

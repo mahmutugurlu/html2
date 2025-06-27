@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="user/register" method="get">
+
+        <table>
+            <tr>
+                <td><label for="eposta">Eposta</label></td>
+                <td><input type="email" name="eposta" id="eposta"></td>
+            </tr>
+            <tr>
+                <td><label for="sifre">Sifre</label></td>
+                <td><input type="password" name="sife" id="sifre"></td>
+            </tr>
+            <tr>
+                <td><label for="kod"></label>Guvenlik kodu</td>
+                <td><input type="text" name="kod" id="kod" value="abc" readonly></td>
+                <!-- readonly ile value ile belirtilen deger üzerinde degisiklik yapilamaz, sadece okunur -->
+            </tr>
+            <tr>
+                <td></td> <!-- olusan tablo icinde bosluk olmasi icin buraya hic bir deger girmedik -->
+                <td>
+                    <input type="submit" value="Kaydet" disabled>
+                    <input type="reset" value="Temizle">
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+    <!-- disabled attrb ile gerekli sartlar saglanana kadar inputu kullandirmaz -->
+
+<!-- label tagindaki for attrb ile input tagindaki id atrb degeri aymi olursa  -->
+</body>
+</html>

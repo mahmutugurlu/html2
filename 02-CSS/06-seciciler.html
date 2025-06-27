@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- --------------- Internal CSS ------------------ -->
+
+    <style>
+
+        *{
+            color: blueviolet; /* bu sekilde yazim genel secicidir, degisiklik butun sayfaya uygulanir */
+        }
+
+        h1{
+            color: red; /*burasi daha spesifik-yakin oldugu icin h1 de bu gecerli */
+            text-align: right;
+            font-weight: 400;
+        
+        }
+
+        p{
+
+            text-align: right; /* Burada bütün p lerde degisiklik yapilir*/ 
+        }
+
+
+        .ortala{ /* html de class gruplastirma icin verilir, . ise css de class manasina gelir */
+            color: red;
+
+            text-align: center;
+
+
+
+        }
+
+        h3.ortala{
+
+            color: green;
+
+
+        }
+
+
+
+
+
+
+        /*birden cok tag ayni class adina sahipse bir tagdaki elementleri secmek icin
+        tag isareti . class adi kullanilir = h3.ortala */
+
+    </style>
+
+
+
+  </head>
+  <body>
+    <a href="">Tikla</a>
+
+    <h1>Merhaba</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quibusdam ad
+      quasi itaque cum aperiam error laudantium velit repellendus numquam alias
+      dicta! Nisi eaque laborum magnam, consequatur veniam perferendis aliquid.
+    </p>
+
+    <h3 class="ortala">Baslik</h3>
+
+    <p class="ortala">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, natus
+      facilis. Dolorum nesciunt saepe culpa pariatur suscipit, similique a
+      officia vitae quaerat itaque earum quas illo fugiat, recusandae modi vero.
+    </p>
+
+  </body>
+</html>
