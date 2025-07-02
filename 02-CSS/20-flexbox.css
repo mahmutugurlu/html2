@@ -1,0 +1,93 @@
+.box1{
+    background-color: red;
+    flex : 1 0 100px; /* Buyu ama kuculme, 100px den daha fazla kuculme */
+   
+    /*  flex: 1;  kullanimiyla elementleri belli oranda büyütüp kücültebiliriz */
+}
+
+.box2{
+
+    background-color: blueviolet;
+   /* flex:1; */
+
+   flex: 1 0 100px;
+}
+
+.box3{
+    background-color: yellowgreen;
+    flex:3 1 100px; /* burada element 3 kat büyüyecek, 1 kat kücülebilecek ama en fazla 100px kadar kücülebilir  */ 
+
+}
+
+.box4{
+    background-color: pink;
+    flex:1 1 100px;
+}
+
+.container div{
+   /* width: 70px;*/
+    
+}
+
+/*
+
+.container {  bu sekilde dikey büyütüp kücültebiliriz
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    border: 1px solid red;
+
+    height: 50vh;
+
+
+
+
+}
+
+
+*/
+
+/*.container {  Bu sekil yazimda elementi yatay büyütüp-kisaltabiliriz 
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    align-items: stretch;
+
+    border: 1px solid red;
+
+    height: 50vh;
+
+
+
+
+}*/
+
+
+.container {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border: 1px solid red;
+
+    height: 50vh;
+
+    gap: 1rem; /* gap ile elementler arasinda bosluk birakiriz*/ 
+
+
+
+
+}
+

@@ -1,0 +1,210 @@
+
+
+/* 5- font'u ekledikten sonra html'e geri donelim, 6 orda*/
+body{
+    font-family: "Montserrat", sans-serif;
+    padding: 2rem; /* icteki elemanlari kenarlardan uzaklastirdik */
+}
+
+
+/* c3-inputlar icin geldik */
+
+.form-row{
+
+    margin-bottom: 1rem;
+}
+
+label{
+    display: block;
+}
+
+textarea,input{
+
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+}
+
+form{
+    width: 100%;
+
+}
+
+button{
+
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    background-color: burlywood;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/* Header bolumu - Ust kisim */
+/* 7 */
+
+header{
+
+    display: flex; /* title kismi ile nav kismini yan yana getirdik */
+    flex-direction: row;  /* gorunur olsun diye yazdik, default'u bu zaten */
+    justify-content: space-between; /* title kismi ile nav kismini basa ve sona aldik */
+    align-items: center; /* dikeyde ayni hizaya aldik */
+    background-color: burlywood;
+    border-radius: 5rem;
+    padding: 1rem 2rem;  /* ustten alttan 1rem, sagdan soldan 2rem */
+    flex-wrap: wrap; /*sayfa kücüldügünde elementleri (yazi vb ) alt alta ekranda gösterir */
+
+
+
+}
+
+/* 8 - Isimle web developer yazisini yan yana getirelim */
+
+header .title{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* 9- h lerin otomatik marjini vardir, kaldiralim, bosluklari biz belirleyelim */
+
+header h2{
+    margin :0;
+}
+
+/* 10- yuvarlak- ismin yanindaki */
+/* a3 */
+
+main h1 span,header .title span{ /* bu sekilde olusturdugumuz elementi farkli iki yerde kullanabiliriz*/
+
+    width :50px;
+    height: 50px;
+    background-color: aqua; 
+    border-radius: 50%; /* ilk önce kare kutu olustu, border-radius: 50%; ile yuvarlak yaptik  */ 
+    display: inline-block; /* büyütüp kücültmek icin melez yaptik */ 
+}
+
+/* 11-ust sagdaki menu uzerinde calisalim */
+
+header nav a{
+    font-weight: 600;
+    text-decoration: none; /* secenek yazilarinin alti ciziliydi, bu cizgiyi kaldirdik */ 
+    color: black;
+}
+
+
+/* 12-linklerin uzerine gelince renkler degissin */
+
+header nav a:hover{
+
+    color: bisque;
+}
+
+/* 13-body'i olusturmak icin html'e gidelim, 14 orda */
+
+/* ********* Body Kisminin Main bölümü ***********   */ 
+
+/*16-a */
+
+main{
+
+    padding: 5rem 20%; /* resmi ve yazilari uzaklastirdik. ustten alttan 5rem, sagdan soldan %20 verdik */
+}
+
+/*16-b*/
+
+main .home{
+    display: flex;
+    align-items: center; /* yazilari dikey hale getirdik*/
+    gap:2rem;
+
+
+
+}
+
+/* 16-c */
+/* resmi kücültelim */
+
+main .profile img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1rem solid burlywood; /* resmin etrefindaki cerceveyi yaptik */ 
+}
+
+/* 16-d */
+
+main .button a{
+    background-color: burlywood;
+    padding: 1rem 2rem; 
+     
+    display: inline-block; /* inline olan butonlari melez hale getirdik*/
+   
+    border-radius: 5rem; /* butonlari oval hale getirdik */
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 3px 3px 5px black; /* bununla butonlara siyah gölge verdik, ilk 3px yatay, ikinci 3px dikey gölgeleme
+                                     icin, 5px ile bulaniklik yapmak icin */
+    margin-right: 1rem;                                 
+
+}
+
+/* 16-e */
+
+main .button a:hover{
+
+    background-color: cadetblue;
+}
+
+/* 17-footer'i olusturmak icin html'e gidelim, 18 orda */
+
+/* --------------------------- footer bölümü -------------------------------*/
+
+/* 20 */
+
+footer{
+    display: flex; /* elementleri yan yana getirir */
+    justify-content: space-between; /* yan yana getirdigimiz elementlerin aralarinda esit bosluklar biraktik*/
+    border-top: 1px solid black; /* elemntlerin üstüne cizgi yaptik */
+    flex-wrap: wrap; /* bununla ekran kücüldügünde elementlerin alt alta görülmesini saglariz*/
+}
+
+/* index.html bitti */
+
+/* a4-yuvarlak ve resume */
+
+main h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+/* a5-card'la ilgili calisalim */
+
+main .card{
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid burlywood;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 3px 3px 7px burlywood;
+    margin-bottom: 2rem; /* alta bir sey eklendiginde bosluk birakacak */ 
+    overflow: hidden; /* elementleri ekran kücüldükce gizler */ 
+}
+
+main section{
+    margin-bottom: 4rem;
+
+}
+
+
+/* a6,ilk card bitti, html'e gidelim, a7 orda */

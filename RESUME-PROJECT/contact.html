@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1- description, web sayfasının kısa bir açıklamasını içerir ve genellikle arama motorları tarafından kullanılır. -->
+    <meta name="description" content="Developer John Connor Resume">
+    <title>Document</title>
+    <!-- 2-link ile CSS'e bagladik -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 3- Google font’larindan birini kullanalim -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 4- font-family: “Montserrat”, sans-serif; seklinde css’e gidip ekleyelim-->
+
+  </head>
+  <body>
+
+        <!-- Header kismi (header semantiktir) -->
+        <!-- 6-header kismi -->
+
+        <header>
+
+          <div class="title">
+
+            <span></span> <!-- Ismin yanindaki nokta icin actik -->
+            <h2>Mahmut Ugurlu</h2>
+            <em>Web Developer</em>
+          </div>
+
+          <nav> <!-- Menu seklinde dizayn yapmak icin nav tagi kullanilir -->
+
+            <a href="index.html">Home</a> |
+            <a href="resume.html">Resume</a> |
+            <a href="contact.html">Contact</a>
+
+
+          </nav>
+
+
+
+        </header>
+
+    
+
+      <main>  <!-- semantik olmasi icin main tagi actik -->
+
+       <!-- c1  inputlari olusturalim-->
+
+       <h1><span></span>Contact</h1>
+
+       <div class="card">
+
+        <form action="https://formsubmit.co/mahmutugurlu0718@gmail.com" method="POST" target="_blank" />
+
+          <div class="form-row">
+            <label for="firstname">FirstName</label>
+            <input type="text" name="firstname" id="firstname" required>
+          </div>
+
+          <div class="form-row">
+            <label for="lastname">LastName</label>
+            <input type="text" name="lastname" id="lastname" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="info@example.com">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+
+
+
+
+        </form>
+
+
+
+
+       </div>
+
+         <!-- c2- css'e gidelim, c3 orda -->
+
+      
+  
+
+
+      </main>
+
+
+      <!-- ********* Footer Kismi *********** -->
+
+      <!-- 18- en alttaki tel, email bolumu-->
+
+      <footer>
+
+        <div>
+          <h3>Phone</h3>
+          <p><a href="tel:+491678523265">1678523265</a></p>
+        </div>
+
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:mahmutugurlu0718@gmail.com">mahmutugurlu0718@gmail.com</a></p>
+        </div>
+
+        <div>
+          <h3>Follow Me</h3>
+          <p>
+              <a href="https://linkedin.com" target="_blank">Linkedin</a>
+          </p>
+      </div>
+
+        <div>
+          <h3>Follow Me</h3>
+          <p>
+              <a href="https://linkedin.com" target="_blank">Linkedin</a>
+              <a href="https://github.com" target="_blank">GitHub</a>
+          </p>
+      </div>
+
+      <div>
+        <h3>Copyright</h3>
+        <p>&copy;2023 - Mahmut Ugurlu</p>
+    </div>
+
+
+
+
+      </footer>
+         <!-- 19- index.html bitti. css'e gidelim, 20 orda -->
+
+
+
+
+
+
+  </body>
+</html>
+
+<!-- Araya girdim ama ben böyle çözdüm ::: VS Code'da sol üstteki menüden File > Preferences > Settings (veya kısayol: Ctrl + ,) yoluyla Ayarlar’a gir.
+Sağ üstteki arama kutusuna "compact folders" yaz.
+"Workbench › Tree: Compact Folders" ayarını kapat (kutunun işaretini kaldır) -->
