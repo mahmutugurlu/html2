@@ -1,0 +1,25 @@
+
+
+/* Universal Selector => Tüm elemanları etkileyen kurallar yazmamızı sağlar. */
+*{
+    /* text-align: center; */
+    color: red;
+    background-color: gold;
+}
+
+h1{
+    color: darkgreen;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+/* class oluşturup sadece bu class'ın verildiği elemanlara uygulanacak kuralları belirleyebiliriz. Class isminden önce . (nokta) kullanılması zorunludur. */
+.active{
+    background-color: darkblue;
+    color: pink;
+    font-weight: bold;
+}
+
+.ortala{
+    text-align: center;
+}
