@@ -1,0 +1,54 @@
+:root{
+    font-size: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+.container {
+  width: 1000px;
+}
+
+.kutu-1 {
+  background-color: crimson;
+  /* % parent'ının değerinin yüzdesini alır */
+  width: 50%;
+}
+
+.kutu-2 {
+    background-color: chartreuse;
+    /* vw (view width) ekranın değerinin yüzdesini alır */
+    width: 30vw;
+  }
+  
+.kutu-3{
+    background-color: rgb(4, 34, 255);
+    width: 300px;
+    font-size: 20px;
+}
+
+.kutu-4{
+    background-color: brown;
+    width: 50vw;
+    /* em parent'a bakarak alınan boyut referans değeridir. */
+    /* rem root'a bakarak alınan boyut referans değeridir. */
+    font-size: 10rem;
+}
+
+.kutu-5 {
+    background-color: orchid;
+    height: 50vh;
+  }
+  

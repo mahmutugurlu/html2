@@ -23,3 +23,59 @@ h1{
 .ortala{
     text-align: center;
 }
+
+div.ortala{
+    background-color: green;
+}
+
+/* ________________ Stillendirme Kuralları ________________ */
+
+/* 1 -!important eklendiğinde diğer kurallara bakılmaksızın bu kural uygulanacaktır. */
+p{
+    background-color: pink !important;
+}
+
+p.ortala{
+    background-color: blueviolet;
+}
+
+/* 2- Eğer !important kullanılmadıysa ancak inline stillendirme kullanıldıysa external değil inline stillendirme kuralı uygulanır */
+span{
+    font-size: 10px;
+}
+
+/* 3- Element ismi ayrıntılı olarak belirtilen kural öncelikli olarak uygulanır.   */
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+ul li a{
+    text-decoration: underline;
+}
+
+a#anchor{
+    color: darkred;
+}
+
+body a#anchor{
+    color: darkblue;
+}
+
+
+/* 4- Eğer diğer kurallar yoksa, elemente en yakın olan kural uygulanır. */
+
+.top-list li{
+    background-color: black;
+}
+
+.top-list li{
+    background-color: white;
+}
+
+/* !important > inline > özel > yakın */
+
+/* strg(ctrl) + # yorum satirinin kisa yolu */
+
+
+

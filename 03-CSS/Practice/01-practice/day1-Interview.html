@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Mülakat Çalışması</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        background: white;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .section {
+        margin-bottom: 40px;
+        padding: 25px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border-left: 5px solid #3498db;
+      }
+
+      .section h2 {
+        color: #2980b9;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+      }
+
+      ol {
+        counter-reset: question-counter;
+        padding-left: 0;
+      }
+
+      ol > li {
+        counter-increment: question-counter;
+        margin-bottom: 25px;
+        position: relative;
+        padding-left: 50px;
+        list-style: none;
+      }
+
+      ol > li::before {
+        content: counter(question-counter);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #3498db;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .question {
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      .answer {
+        color: #34495e;
+        margin-bottom: 15px;
+        line-height: 1.7;
+      }
+
+      .example {
+        background: #ecf0f1;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #e74c3c;
+        margin-top: 10px;
+      }
+
+      .example h4 {
+        color: #e74c3c;
+        margin-bottom: 10px;
+        font-size: 1rem;
+      }
+
+      .code {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: "Courier New", monospace;
+        font-size: 14px;
+        overflow-x: auto;
+        margin: 10px 0;
+      }
+
+      .semantic-tags {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin: 15px 0;
+      }
+
+      .tag-item {
+        background: #e8f5e8;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #27ae60;
+      }
+
+      .tag-name {
+        font-weight: bold;
+        color: #27ae60;
+      }
+
+      .demo-flexbox {
+        background: #f39c12;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0;
+      }
+
+      .flex-item {
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      .box-model-demo {
+        background: #3498db;
+        padding: 20px;
+        border: 5px solid #2980b9;
+        margin: 20px;
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+      }
+
+      .form-demo {
+        background: #ecf0f1;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 15px 0;
+      }
+
+      .form-demo input,
+      .form-demo select,
+      .form-demo textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        border: 1px solid #bdc3c7;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .form-demo label {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      .form-demo button {
+        background: #27ae60;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+      }
+
+      .form-demo button:hover {
+        background: #219a52;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background: #3498db;
+        color: white;
+      }
+
+      tr:hover {
+        background: #f5f5f5;
+      }
+
+      .responsive-demo {
+        background: #9b59b6;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 15px 0;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .responsive-demo {
+          background: #e74c3c;
+        }
+
+        .responsive-demo::after {
+          content: " (Mobil Görünüm)";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>HTML & CSS Mülakat Çalışması</h1>
+
+      <div class="section">
+        <h2>HTML Temelleri</h2>
+
+        <ol>
+          <li>
+            <div class="question">
+              HTML Nedir ve Neden Bir Programlama Dili Olarak Kabul Edilmez?
+            </div>
+            <div class="answer">
+              HTML (Hyper Text Markup Language), web sayfalarının yapısını
+              tanımlamak için kullanılan bir
+              <strong>işaretleme dilidir</strong>. HTML programlama dili
+              değildir çünkü mantıksal işlemler (if, for, function vb.) yapmaz
+              ve error vermez.
+            </div>
+          </li>
+
+          <li>
+            <div class="question">
+              Temel Bir HTML sayfasını yapısı nasıldır?
+            </div>
+            <div class="answer">
+              Temel bir sayfa yapısı: &lt;html&gt;, &lt;head&gt; ve &lt;body&gt;
+              etiketlerinden oluşur.
+              <br />Head bölümü stil dosyaları, başlık bilgileri, meta
+              bilgilerini barındırır. <br />
+              Body ise kullanıcının gördüğü tüm içerikleri barındırır.
+            </div>
+          </li>
+
+          <li>
+            <div class="question">
+              HTML5 ile Gelen Semantik Etiketler Nelerdir?
+            </div>
+            <div class="example">
+              <div class="semantic-tags">
+                <div class="tag-item">
+                  <div class="tag-name">&lt;header&gt;</div>
+                  <div>Sayfa veya bölüm başlığı</div>
+                </div>
+                <div class="tag-item">
+                  <div class="tag-name">&lt;nav&gt;</div>
+                  <div>Navisayon Menüsü</div>
+                </div>
+                <div class="tag-item">
+                  <div class="tag-name">&lt;main&gt;</div>
+                  <div>Ana içerik alanı</div>
+                </div>
+                <div class="tag-item">
+                  <div class="tag-name">&lt;footer&gt;</div>
+                  <div>Sayfanın altındaki alan</div>
+                </div>
+                <div class="tag-item">
+                  <div class="tag-name">&lt;aside&gt;</div>
+                  <div>Yan menü, yan içerik</div>
+                </div>
+                <div class="tag-item">
+                  <div class="tag-name">&lt;figure&gt;</div>
+                  <div>Şekil, fotoğraf, şema</div>
+                </div>
+                <div class="tag-item">
+                  <div class="tag-name">&lt;article&gt;</div>
+                  <div>Makale, blog yazısı</div>
+                </div>
+                <div class="tag-item">
+                  <div class="tag-name">&lt;section&gt;</div>
+                  <div>İçerik bölümü</div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="question">
+              Block ve Inline Elementler Arasındaki Fark Nedir?
+            </div>
+            <div class="answer">
+              Block elementler tüm satırı kaplar ve yeni satırda başlar.
+              <br />
+              Inline elementler içeriği kadar yer kaplar ve yan yana dizilirler
+              ve width, height, padding ve margin alamazlar.
+            </div>
+            <div class="example">
+              <h4>Örnek:</h4>
+              <div
+                style="background: #f0f0f0; padding: 15px; border-radius: 5px"
+              >
+                <div
+                  style="
+                    background: #3498db;
+                    color: white;
+                    padding: 10px;
+                    margin: 5px 0;
+                  "
+                >
+                  Block Element (div)
+                </div>
+                <div
+                  style="
+                    background: #e74c3c;
+                    color: white;
+                    padding: 10px;
+                    margin: 5px 0;
+                  "
+                >
+                  Başka Block Element (div)
+                </div>
+                <p>
+                  Bu paragrafta
+                  <span style="background: #f39c12; padding: 5px"
+                    >inline element (span)</span
+                  >
+                  ve
+                  <strong
+                    style="background: #27ae60; color: white; padding: 5px"
+                    >başka inline element (strong)</strong
+                  >
+                  yan yana.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h2>HTML Bağlantılar ve Medya</h2>
+        <ol start="5">
+          <li>
+            <div class="question">
+              HTML entity'leri nedir ve hangi durumlarda kullanılır?
+            </div>
+            <div class="answer">
+              HTML kodunda özel anlama sahip karakterler gösterilmesi
+              gerektiğinde HTML entity'ler kullanılır.
+            </div>
+            <div class="example">
+              <h4>Yaygın HTML Entity'ler:</h4>
+              <div class="code">
+                &amp;lt; = &lt; (küçüktür) &amp;gt; = &gt; (büyüktür) &amp;amp;
+                = &amp; (ve işareti) &amp;nbsp; = (boşluk) &amp;copy; = © (telif
+                hakkı) &amp;trade; = ™ (marka) &amp;hearts; = ♥ (kalp)
+              </div>
+              <div
+                style="
+                  background: #f0f0f0;
+                  padding: 15px;
+                  border-radius: 5px;
+                  margin-top: 10px;
+                "
+              >
+                <p>HTML kodda: &lt;p&gt;Merhaba&lt;/p&gt;</p>
+                <p>Telif hakkı: © 2025 Şirket Adı</p>
+                <p>Özel karakterler: ♥ ™ ®</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="question">HTML'de bağlantı nasıl oluşturulur?</div>
+            <div class="answer">
+              &lt;a&gt; etiketi ile link oluşturulur. href attribute'u ile
+              kullanıcının gideceği yer, hedef belirlenir. target attribte'u ile
+              yeni sekmede açılması belirlenebilir.
+            </div>
+          </li>
+
+          <li>
+            <div class="question">HTML'de görsel nasıl eklenir?</div>
+            <div class="answer">
+              &lt;img&gt; etiketiyle görsel eklenir. src attribute'u görselin
+              resminin belirtildiği yerdir. Eğer tarayıcı src attribute
+              bulamazsa alt yazısı yer tutucu olarak verilir. Alt attribte'u SEO
+              için önemlidir.
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h2>HTML Tablolar ve Formlar</h2>
+
+        <ol>
+          <li>
+            <div class="question">HTML'de tablo nasıl oluşturulur?</div>
+            <div class="answer">
+              Tablo oluşturmak için öncelikle &lt;table&gt; etiketi açılmalıdır.
+              Bu etiketin içerisine &lt;thead&gt;, &lt;tbody&gt; ve
+              &lt;tfoot&gt; eklenebilir. &lt;thead&gt; içirisinde her satır için
+              &lt;tr&gt; (table row) ve bunun içerisine de &lt;th&gt; konulur.
+              &lt;tbody&gt; ve &lt;tfoot&gt; içirisinde her satır için
+              &lt;tr&gt; (table row) ve bunun içerisine de &lt;td&gt; konulur.
+            </div>
+          </li>
+
+          <li>
+            <div class="question">HTML'de form nedir ve nasıl oluşturulur?</div>
+            <div class="answer">
+              Kullanıcıdan bilgi almak için form yapıları kullanılır. Formlar
+              içerisinde input, label, select, textarea, button gibi elemanlar
+              bulundurur.
+            </div>
+            <div class="form-demo">
+              <form class="form-demo">
+                <label for="ad">Ad Soyad</label>
+                <input type="text" id="ad" name="ad" required />
+
+                <label for="email">E-posta</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="sifre">Şifre</label>
+                <input
+                  type="password"
+                  id="sifre"
+                  name="sifre"
+                  minlength="8"
+                  required
+                />
+
+                <label for="sehir">Şehir</label>
+                <select name="sehir" id="sehir">
+                  <option value="">Seçiniz</option>
+                  <option value="34">İstanbul</option>
+                  <option value="06">Ankara</option>
+                  <option value="35">İzmir</option>
+                </select>
+
+                <label for="mesaj">Mesaj</label>
+                <textarea name="mesaj" id="mesaj" rows="4"></textarea>
+
+                <button type="submit" title="Gönder">Gönder</button>
+              </form>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h2>CSS Temelleri</h2>
+
+        <ol>
+          <li>
+            <div class="question">CSS Nedir ve HTML'e nasıl uygulanır?</div>
+            <div class="answer">
+              CSS, HTML elementlerinin görsel stillerini tanımlar. Üç şekilde
+              uygulanabilir: Inline, Internal, External
+            </div>
+          </li>
+
+          <li>
+            <div class="question">Flexbox nedir ve nasıl kullanılır?</div>
+            <div class="answer">
+              Flexbox, elementleri yatay ve dikey eksende kolayca hizalamaya
+              yarayan display özelliğidir. Responsive tasarımları kolaylaştırır.
+            </div>
+            <div class="demo-flexbox">
+              <div class="flex-item">Item 1</div>
+              <div class="flex-item">Item 2</div>
+              <div class="flex-item">Item 3</div>
+            </div>
+            <pre class="code">
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px
+}</pre
+            >
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

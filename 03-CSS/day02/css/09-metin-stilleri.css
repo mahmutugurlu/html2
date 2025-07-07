@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+.other li a{
+    text-decoration: none;
+}
+
+p{
+    text-decoration: double line-through red;
+}
+
+.other li a.active{
+    /* italic | normal değerlerini alabilir */
+    font-style: italic; 
+
+    /* 100 ... 900 | lighter, normal, bold, bolder değerlerini alabilir */
+    font-weight: bold;
+
+}
+
+/* ziyaret edilmemiş linklere uygulanacak stillendirme */
+ul.other2 li a:link{
+    color: orange;
+}
+
+/* ziyaret edilmiş linklere uygulanacak stillendirme */
+ul.other2 li a:visited{
+    color: turquoise
+}
+
+/* elementin üzerine gelince uygulanacak stillendirme */
+a:hover{
+    background-color: chartreuse;
+    color: darkred;
+}
+
+/* Elementin üzerine basılıp tıklama bitene kadarki sürede uygulanacak stillendirme */
+a:active{
+    background-color: darkred;
+    color: chartreuse;
+}
