@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: rgb(73, 73, 73);
+}
+
+nav.menu{
+    text-align: center;
+    padding: 15px;
+}
+
+nav.menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 10px;
+}
+
+nav.menu a:hover{
+    color: rgb(97, 125, 252);
+}
+
+nav.menu img{
+    width: 20px;
+    height: 20px;
+}
+
+main section{
+    text-align: center;
+    margin-top: 25px;
+    padding: 20px 20px 0px 20px;
+    background-color: rgb(40,40,40);
+}
+
+main section h2{
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+main section p{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+main section div.links{
+    margin: 10px 0px 30px;
+}
+
+main section div.links a{
+    text-decoration: none;
+    color: cornflowerblue;
+    margin-right: 35px;
+}
+
+main section div.links a:hover{
+    color: red;
+}
+
+main section.iphone14{
+    background-color: white;
+}
+
+main section.iphone14 h2, main section.iphone14 p{
+    color: rgb(40,40,40);
+}
+
+main section.iphone14-pro img{
+    width: 100%;
+}
+
+main section.watch h2 img{
+    width: 40px;
+    height: 40px;
+}
+
+main section.watch .series{
+    color: crimson;
+    /* Harfleri büyük, küçük veya sadece ilk harfleri büüyük yapar. */
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* Harfler arasındaki boşluğu artırmak için kullanılır. */
+    letter-spacing: 5px;
+}

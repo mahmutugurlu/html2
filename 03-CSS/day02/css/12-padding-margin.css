@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: lightcoral;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    background-color: aqua;
+    /*       top  r&l  bottom    */
+    padding: 10px 20px 30px;
+}
+
+h2{
+    text-align: center;
+    color: pink;
+    background-color: crimson;
+    margin: 10px;
+}
+
+.kutu-1{
+    background-color: lawngreen;
+    
+    /* margin-top: 10px;
+    margin-right: 100px;
+    margin-bottom: 20px; 
+    margin-left: 50px; */
+   
+/*          top     right  bottom   left */
+    margin: 10px    100px  20px     50px;
+}
+
+p.para{
+    background-color: blueviolet;
+    
+    /* padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+
+    /* İlk değer dikeyde ikinci değer yatayda padding veya margin verir: */
+    padding: 10px 30px;
+}
+
+.span{
+    background-color: darkblue;
+    color: white;
+
+    /* inline marginde dikey değer alamaz, yatay değer alır. */
+    margin: 1000px 10px;
+
+    /* inline padding'de yatay ve dikey değer alır ancak diğer elemanların görüntüsünü bozabilir. */
+    padding: 10px 20px;
+
+}
+
+.kutu-1{
+    width: 500px;
+    height: 500px;
+}
+
+.kutu-2{
+    width: 300px;
+    height: 300px;
+    background-color: slateblue;
+    margin: 100px;
+    padding: 100px;
+}
+
+.kutu-3{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}

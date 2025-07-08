@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color: red;
+    margin: 20px;
+}
+
+.kutu-1{
+    background-color: deepskyblue;
+    height: 300px;
+    width: 300px;
+
+    /* Sağa Hizalama */
+    /* margin-right: 0;
+    margin-left: auto; */
+
+    /* Sola Hizalama */
+    /* margin-right: auto;
+    margin-left: 0; */
+
+    /* Ortaya Hizalama */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0px auto;
+}
+
+.kutu-1 p{
+    background-color: bisque;
+    height: 100px;
+    width: 100px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* inline elementleri hizalamak için margin auto kullanamayız. */
+.kutu-2 span{
+    background-color: red;
+    color: white;
+    margin: 0 auto;
+    width: 100px;
+    /* display: block; */
+}
