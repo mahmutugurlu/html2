@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+h1::before,
+h1::after{
+    content: " 😺 ";
+}
+
+p::first-letter{
+    font-weight: bolder;
+    font-size: 3rem;
+    font-style: italic;
+    color: blue;
+}
+
+p::first-line{
+    color: red;
+    font-size: 1.2rem;
+}
+
+p::selection{
+    background-color: blueviolet;
+    color: orange;
+}
+
+ol li::marker{
+    color: darkgoldenrod;
+    font-size: 2rem;
+}

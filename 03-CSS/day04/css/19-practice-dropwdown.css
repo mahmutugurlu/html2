@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+nav.menu{
+    margin: 10px auto;
+    width: 300px;
+}
+
+nav.menu button{
+    display: block;
+    margin: 10px auto;
+    background-color: violet;
+    color: chartreuse;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+nav.menu ul{
+    display: none;
+    list-style-type: "❤️ ";
+    margin: 5px auto;
+    padding: 0;
+    list-style-position: inside;
+    width: 100px;
+}
+
+nav.menu:hover ul{
+    display: block;
+}

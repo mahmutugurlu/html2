@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+.container{
+    border: 5px solid blue;
+}
+
+.inner-container{
+    border: 5px solid red;
+}
+
+.container a:first-child{
+    text-decoration: none;
+    color: red;
+}
+
+/* Child Combinator => sadece ilk derece çocuğu olan elementler etkilenir */
+.container > p{
+    background-color: yellow;
+}
+
+/* Next Sibling Combinator => kendisinden hemen sonra gelen ilk KARDEŞ elementi etkiler. İki kardeş arasında başka bir element varsa kural uygulanmaz. */
+div + a{
+    font-size: 30px;
+}
+
+div + p{
+    font-size: 30px;
+}
+
+
+/* Subsequent Sibling Combinator => kendisinden sonra gelen kardeş elementleri etkiler 
+
++ ile farkı:
+    i.  Birden fazla elementi etkileyebilir.
+    ii. Kardeşi ile arasında farklı elementler olsa bile kural uygulanır. (Elementler ardarda olmak zorunda değildir.)
+*/
+div ~ a{
+    background-color: lightskyblue;
+}
+
+div ~ p{
+    background-color: coral;
+}
