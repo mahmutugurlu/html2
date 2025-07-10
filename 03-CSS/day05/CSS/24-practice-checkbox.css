@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+label.label-mode{
+    font-size: 3rem;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+    text-align: center;
+}
+
+input.check-mode{
+    display: none;
+}
+
+p.content{
+    text-align: justify;
+    padding: 20px;
+}
+
+/* input.check-mode:checked + p.content{
+    background-color: crimson;
+    color: blanchedalmond;
+} */
+
+input.check-mode:checked ~ p.content{
+    background-color: crimson;
+    color: blanchedalmond;
+}

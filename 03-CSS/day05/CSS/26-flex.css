@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+.container{
+    background-color: #333;
+    height: 500px;
+    /* FLEX */
+    display: flex;
+
+    /* FLEX-DIRECTION */
+    /* DEFAULT => flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+    /* JUSTIFY-CONTENT  */
+    /* DEFAULT => justify-content: flex-start; */
+    /* Ortalar: */
+    /* justify-content: center; */
+    /* Sona Yaslama */
+    /* justify-content: flex-end; */
+    /* İlk elementi sola, son elementi sağa yaslayarak elementler arasında eşit mesafe bırakır: */
+    /* justify-content: space-between; */
+    /* İlk elementi soladan, son elementi sağdan x mesafe uzaklığa sabitleyerek geri kalan elementler arasında 2x mesage bırakır:  */
+    /* justify-content: space-around; */
+    /* Tüm elementler arasında eşit mesafe uzaklık bırakır. */
+    /* justify-content: space-evenly; */
+
+    /* ALIGN-ITEMS */
+    /* DEFAULT => align-items: stretch; */
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center; */
+
+    /* 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    */
+
+    /* 
+    flex-direction: row     => justify-content X Ekseni, align-items Y Ekseni hizalaması yapar
+
+    flex-direction: column  => justify-content Y Ekseni, align-items X Ekseni hizalaması yapar
+    */
+
+    justify-content: center;
+    gap: 10px;
+    /* row-gap: 10px;
+    column-gap: 10px; */
+
+}
+
+.box{
+    background-color: lawngreen;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    
+}
