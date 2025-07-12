@@ -1,0 +1,113 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+div{
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+}
+
+.kutu-1{
+    background-color: blanchedalmond;
+    border: 3px solid red;
+}
+
+.kutu-2{
+    background-color: lawngreen;
+    border: 13px solid darkgreen;
+}
+
+.kutu-3{
+    /* border'ın 1. değeri */
+    border-width: 10px;
+    /* border'ın 2. değeri */
+    border-style: dashed;
+    /* border'ın 3. değeri */
+    border-color: forestgreen;
+}
+
+.kutu-4{
+    /* solid, dashed, dotted, groove, inset, outset, ridge, none */
+    border: 10px groove  blue;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-bottom: 3px solid rgb(143, 13, 39);
+}
+
+button:hover{
+    border-bottom: 5px solid rgb(143, 13, 39);
+}
+
+button:active{
+    border-bottom: 1px solid rgb(143, 13, 39);
+}
+
+.kutu-5{
+    background-color: antiquewhite;
+    border-bottom: 3px solid navy;
+    border-top: 10px solid mediumaquamarine;
+    border-right: 5px dotted greenyellow;
+    border-left: 3px dashed brown;
+}
+
+input{
+    width: 200px;
+    padding: 10px 20px;
+    border: none;
+    border-top: 5px solid mediumseagreen;
+    outline: none;
+}
+
+input:focus{
+    border: none;
+    border-bottom: 5px solid mediumseagreen;
+}
+
+.kutu-6{
+    border: 13px solid purple;
+    /* Max alabileceği değerler 150px ve 50%'dir */
+    /* border-radius: 150px; */
+    border-radius: 50%;
+}
+
+.kutu-7{
+    background-color: dodgerblue;
+    /* border-radius 4 değer alabilir. Bunlar sırasıyla sol üst, sağ üst, sağ alt, ve sol alttır. */
+    border-radius: 50px 20px 20px 1px;
+}
+
+.kutu-8{
+ border: 5px solid mediumvioletred;
+ /* border-radius: 0px 0px 10px 0px; */
+ border-top-left-radius: 10px;
+ border-top-right-radius: 40px;
+ border-bottom-right-radius: 5px;
+ border-bottom-left-radius: 100px;
+}
+
+div.card{
+    width: 600px;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+    border: 3px solid navy;
+    border-radius: 10%;
+
+}
+
+img{
+    width: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+
+}

@@ -1,0 +1,125 @@
+:root {
+    --background-color: #F0F5F9; /* Açık mavi-gri */
+    --primary-text-color: #2F3640; /* Koyu gri */
+    --header-background-color: #ECF0F1; /* Açık gri */
+    --primary-color: #2980B9; /* Canlı mavi */
+    --secondary-color: #E67E22; /* Portakal rengi */
+    --hover-color: #F39C12; /* Açık portakal rengi */
+    --footer-border-color: #ccc; /* Açık gri footer sınırı */
+    --input-border-color: #ccc; /* Açık gri input sınırı */
+    --card-border-color: #E67E22; /* Portakal rengi kart kenarı */
+    --box-shadow-color: rgba(0, 0, 0, 0.5); /* Yumuşak gölge */
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    padding: 2rem;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background-color);
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+header .title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+header h2{
+    margin: 0;
+}
+header .title span, main h1 span{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+}
+header nav a{
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+header nav a:hover{
+    color: var(--hover-color);
+}
+main{
+    padding: 5rem 20%;
+}
+main .home{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+main .profile img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1rem solid var(--secondary-color);
+}
+main .buttons a{
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 5rem;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    box-shadow: 3px 3px 5px var(--box-shadow-color) ;
+}
+main .buttons a:hover{
+  background-color: var(--hover-color);
+  color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid var(--footer-border-color);
+}
+
+main h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+main .card{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid var(--card-border-color);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 7px var(--box-shadow-color);
+}
+
+.form-row{
+    margin-bottom: 1rem;
+}
+label{
+    display: block;
+}
+textarea , input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-border-color);
+}
+form{
+    width: 100%;
+}
+button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--secondary-color);
+    font-size: 1.2rem;
+}
