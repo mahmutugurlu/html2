@@ -1,0 +1,30 @@
+body{
+    background-color: #333;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+
+div.box-1{
+    box-sizing: content-box;
+    background-color: purple;
+    width: 500px;
+    margin: 10px auto;
+    padding: 50px;
+    border: 20px solid khaki;
+    text-align: center;
+}
+
+div.box-2{
+    /* Width'i border + padding + content olarak hesaplar. */
+    box-sizing: border-box;
+    background-color: lawngreen;
+    width: 500px;
+    margin: 10px auto;
+    padding: 50px;
+    border: 20px solid mediumseagreen;
+    text-align: center;
+}

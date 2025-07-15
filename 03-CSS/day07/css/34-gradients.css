@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  margin: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 3px solid chartreuse;
+  margin: 40px auto;
+}
+
+div.bg-1 {
+  background-image: linear-gradient(crimson, gold);
+}
+
+div.bg-2 {
+  /* to bottom (default), to left, to right, to top değerleri konulabilir. */
+  background-image: linear-gradient(to right, teal, brown);
+}
+
+div.bg-3 {
+  /* İlk değere yönler verilebileceği gibi derece de verilebilir. Bu dereceler 360 dereceyi geçerse 360 çıkarıtılıp kullanılır. */
+  background-image: linear-gradient(45deg, violet, navy);
+}
+
+div.bg-4 {
+  background-image: linear-gradient(darkviolet 10%, lightblue 90%);
+}
+
+div.bg-5 {
+  background-image: linear-gradient(red, green, blue);
+}
+
+div.bg-6 {
+  background-image: linear-gradient(
+    45deg,
+    crimson 50%,
+    teal 60%,
+    gold 70%,
+    brown 80%,
+    violet,
+    navy 80%
+  );
+}
+
+div.bg-7 {
+  background-image: linear-gradient(
+    rgba(200, 200, 200, 0.3),
+    rgba(255, 255, 100, 0.8)
+  );
+}
+
+button {
+  width: 200px;
+  height: 50px;
+
+  display: flex;
+  align-items: end;
+  background-image: linear-gradient(45deg, yellow, orange, lawngreen);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+button:hover {
+  transition: 0.3s all;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, lawngreen, yellow, orange);
+
+}
