@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  margin: 20px;
+}
+
+.box {
+  width: 300px;
+  height: 150px;
+  margin: 40px auto;
+  border-radius: 10px;
+}
+
+div.bg-1 {
+  background-image: radial-gradient(gold, black);
+}
+
+div.bg-2 {
+  background-image: radial-gradient(circle, crimson, lawngreen);
+}
+
+div.bg-3 {
+  background-image: radial-gradient(circle, red 20%, white 35%);
+}
+
+div.bg-4 {
+  background-image: radial-gradient(
+    circle,
+    green,
+    blue,
+    red,
+    gold,
+    violet,
+    purple,
+    black
+  );
+}
+
+button {
+  width: 200px;
+  height: 100px;
+  border-radius: 50px;
+  display: block;
+  margin: 20px auto;
+  background-image: radial-gradient(
+    white,
+    pink,
+    springgreen,
+    cyan,
+    blueviolet,
+    navy,
+    black
+  );
+}
+
+button:hover {
+  color: white;
+  background-image: radial-gradient(
+    circle,
+    black,
+    navy,
+    blueviolet,
+    cyan,
+    springgreen,
+    pink,
+    white
+  );
+}
