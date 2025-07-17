@@ -1,72 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1{
-    text-align: center;
-    color: red;
-    margin: 20px;
+h1 {
+  text-align: center;
+  color: red;
+  margin: 20px;
+  margin-top: 100px;
 }
 
-form.input-group-1{
-    background-color: #333;
-    width: 350px;
-    border-radius: 40px;
-    margin: 20px auto;
-
-    position: relative;
+/* position: fixed; ile bu özelligi uyguladigimiz element sayfada sürekli görünür olur, asagi yukari kaydirsak da 
+görmemizi saglar , element bir yerde sabit kalir */ 
+nav.menu {
+  width: 100%;
+  height: 61.5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0; /* elementin yukarida konumlanmasini saglar*/ 
 }
 
-form.input-group-1 input{
-    padding: 15px 20px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: whitesmoke;
-    font-size: 16px;
+nav.menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-form.input-group-1 button{
-    padding: 15px 20px;
-    text-align: center;
-    border-radius: 40px;
-    font-weight: bold;
-    background-color: orange;
-
-    position: absolute;
-    right: 0px;
-    top: 0px;
+nav.menu ul li {
+  display: flex;
 }
 
-form.input-group-2{
-    width: 350px;
-    border-radius: 10px;
-    border: 3px solid;
-    margin: 20px auto;
-
-    position: relative;
+nav.menu ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
 }
 
-form.input-group-2 input{
-    padding: 15px 20px;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 16px;
+nav.menu ul li a:hover {
+  border-bottom: 3px solid orange;
 }
 
-form.input-group-2 button{
-    border: none;
-    outline:none;
-    background-color: transparent;
+/* position: sticky; ile bu özelligi uyguladigimiz element sayfada bir yerde yapisip kalir  */ 
+.sepet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px auto;
+  border: 5px solid orangered;
+  background-color: white;
 
-    position: absolute;
-    right: 10px;
-    top: 13px;
+  position: sticky;
+  bottom: 0; /*elementin altta konumlanmasini saglar.*/ 
+  z-index: 51;
 }
 
-form.input-group-2 button i{
-    font-size: 20px;
+.icon i {
+  font-size: 3rem;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  padding: 20px;
+  background-color: lawngreen;
+  border-radius: 150px;
+  color: white;
+  cursor: pointer;
+  z-index: 50; /*z-index: ; vererek bir elementin diger elementlere göre üste görülmesini saglariz, arti deger verdikce
+               üste cikar, - deger de verilir, ama bu kez arka plana kayar. cok kullanmak tavsiye edilmez */ 
 }
